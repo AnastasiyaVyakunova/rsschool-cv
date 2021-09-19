@@ -4,6 +4,7 @@
     --title-color: #a4a5a6;
     --text-color: #979899;
     --pink-color: #dbb49f;
+    scroll-behavior: smooth
 }
 
 body {
@@ -20,19 +21,26 @@ body {
     box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.43);
 }
 
-header {
+.nav {
     display: flex;
     width: 100%;
-    color: var(--title-color);
-    padding: 35px;
-    text-align: center;
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
+    background-color: var(--dark-gray-color);
+}
 
+header {
+    display: flex;
+    color: var(--title-color);
+    padding: 25px;
+    text-align: center;
 }
 
 header img {
     border-radius: 50%;
     border: 5px solid var(--pink-color);
     padding: 8px;
+    margin: 20px 20px 20px 20px;
 }
 
 header h1 {
@@ -41,23 +49,20 @@ header h1 {
     line-height: 1.1;
     text-transform: uppercase;
     letter-spacing: 5px;
-    margin-top: 80px;
-    margin-bottom: 20px;
-    margin-right: 50px;
+    width: 600px;
+    margin: 50px 20px 20px 20px;
 }
 
 header h2 {
     font-size: 1.2rem;
     font-weight: 300;
-    margin-right: 50px;
 }
 
 header ul {
     display: flex;
     text-align: center;
-    margin-top: 90px;
-    margin-right: 40px;
-    justify-content: space-evenly;
+    margin-top: 70px;
+    justify-content: space-between;
 }
 
 header span {
@@ -85,10 +90,10 @@ address {
 .contacts::before {
     content: '';
     display: flex;
-    
-    width: 550px;
+    width: 600px;
     background-color: #979899;
     height: 1px;
+    margin-left: 20px;
     position: absolute;
     top: 360px;
 }
@@ -117,16 +122,14 @@ main h4 {
 
 .about-me-title {
     background-color: var(--dark-gray-color);
-    height: 30px;
-    width: 500px;
+    width: 70%;
     padding: 20px 20px 40px 0px;
     text-align: right;
 }
 
 .about-me-content {
     background-color: var(--light-gray-color);
-    padding: 20px 10px 40px 20px;
-    height: 30px;
+    padding: 20px 20px 20px 20px;
 }
 
 .skills {
@@ -135,27 +138,41 @@ main h4 {
 
 .skills-title {
     background-color: var(--light-gray-color);
-    height: 190px;
-    width: 280px;
+    width: 70%;
     padding: 20px 20px 40px 0px;
     text-align: right;
 }
 
 .skills-content {
     background-color: var(--dark-gray-color);
-    padding: 20px 10px 20px 20px;
-    width: 760px;
+    padding: 20px 20px 20px 20px;
+    width: auto;
+}
+
+.codewars {
+    display: flex;
+}
+
+.code-title {
+    background-color: var(--dark-gray-color);
+    width: 70%;
+    padding: 20px 20px 40px 0px;
+    text-align: right;
+}
+
+.code-content {
+  margin-right: 125px;
 }
 
 main ul {
     display: flex;
-    justify-content: space-evenly;
-
+    justify-content: space-around;
+    
 }
 
 main li {
     text-align: left;
-    padding: 20px;
+    padding: 0 15px 0 15px;
 }
 
 .education {
@@ -163,16 +180,17 @@ main li {
 }
 
 .education-title {
-    background-color: var(--dark-gray-color);
-    height: 30px;
-    width: 273px;
+    background-color: var(--light-gray-color);
+    width: 35%;
     padding: 20px 20px 40px 0px;
     text-align: right;
 }
 
 .education-content {
-    background-color: var(--light-gray-color);
-    padding: 20px 10px 20px 20px;
+    background-color: var(--dark-gray-color);
+    padding: 20px 20px 20px 20px;
+    width: 65%;
+   
 }
 
 .english {
@@ -180,17 +198,16 @@ main li {
 }
 
 .english-title {
-    background-color: var(--light-gray-color);
-    height: 15px;
-    width: 273px;
+    background-color: var(--dark-gray-color);
+    width: 35%;
     padding: 20px 20px 40px 0px;
     text-align: right;
 }
 
 .english-content {
-    background-color: var(--dark-gray-color);
+    background-color: var(--light-gray-color);
     padding: 20px 10px 20px 20px;
-    width: 740px;
+    width: 65%;
 }
 
 footer {
@@ -206,4 +223,3 @@ footer a {
 footer img {
     padding-right: 10px;
 }
-

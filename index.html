@@ -3,17 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Vyakunova VC</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/circle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad('javascript');</script>
+    <script>console.log(160)</script>
+    <style>
+      .javascript {
+        color: #979899;
+        background-color: #2d2e2e;
+      }
+      </style>
 </head>
 <body>
     <div class="container">
+        <nav class="page-nav">
+            <ul class="nav">
+               <li class="nav-item">
+                   <a class="nav-link" href="#am">About Me</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#s">Skills</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#cw">Example of My Code</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#ed">Education</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#en">English</a>
+               </li>
+           </ul>
+        </nav>
         <header>
-            <img src="img/avatar.jpg" alt="vyakunova-anastasia" width="350" height="350">
-            <div>
+            <img src="img/avatar.jpg" alt="vyakunova-anastasia" width="300" height="300">
+            <div class="header-container">
                 <h1>Anastasia <span>Vyakunova</span></h1>
                 <h2>Future Front-end Developer</h2>
                 <ul class="contacts">
@@ -33,7 +62,7 @@
             </div>
         </header>
         <main>
-            <section class="about-me">
+            <section id="am" class="about-me">
                 <div class="about-me-title">
                     <h2>About Me</h2>
                     <h4>A few words</h4>
@@ -43,7 +72,7 @@
                         I am reliable and have a great desire to acquire new knowledge. I have a creative approach to solving problems.</p>
                 </div>
             </section>
-            <section class="skills">
+            <section id="s" class="skills">
                 <div class="skills-title">
                     <h2>Skills</h2>
                     <h4>In progress</h4>
@@ -72,8 +101,8 @@
                         </li>
                         <li>
                             <h3>JS</h3>
-                            <div class = "c100 p20 pink">
-                                <span> 20% </span>
+                            <div class = "c100 p40 pink">
+                                <span> 40% </span>
                                 <div class = "slice">
                                   <div class = "bar"> </div>
                                   <div class = "fill"> </div>
@@ -93,7 +122,36 @@
                     </ul>
                 </div>
             </section>
-            <section class="education">
+            <section id="cw" class="codewars">
+                <div class="code-title">
+                    <h2>Example of My Code</h2>
+                    <h4><a href="https://www.codewars.com/users/AnastasiyaVyakunova">Codewars</a></h4>
+                </div>
+                <div class="code-content">
+<pre><code class="javascript">
+    function revrot(str, sz) { 
+        if (sz <= 0 || str.length === 0 || sz > str.length) return "";
+        let chunk = '';
+        let result = '';
+        while (str.length >= sz) {
+            chunk = str.substring(0, sz);
+            str = str.substring(sz);
+            let n = 0;
+            for (let i = 0; i < chunk.length; i++) {
+            if (Number(chunk[i]) % 2 !== 0) n += 1;
+            }
+            if (n % 2 === 0) {
+            result += chunk.split('').reverse().join('');
+            } else {
+            result += chunk.substring(1) + chunk[0];
+            }
+        }
+        return result;
+        }
+</code></pre>
+                </div>
+            </section>
+            <section id="ed" class="education">
                 <div class="education-title">
                     <h2>Education</h2> 
                 </div>
@@ -102,7 +160,7 @@
                     <p>Computer Security</p>
                 </div>
             </section>
-            <section class="english">
+            <section id="en" class="english">
                 <div class="english-title">
                     <h2>English</h2>
                 </div>
