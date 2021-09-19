@@ -1,0 +1,225 @@
+:root {
+    --dark-gray-color: #2b2c2c;
+    --light-gray-color: #2d2e2e;
+    --title-color: #a4a5a6;
+    --text-color: #979899;
+    --pink-color: #dbb49f;
+    scroll-behavior: smooth
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #242626;
+}
+
+.container {
+    margin: 20px auto;
+    width: 1060px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    background-color: var(--light-gray-color);
+    box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.43);
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
+    background-color: var(--dark-gray-color);
+}
+
+header {
+    display: flex;
+    color: var(--title-color);
+    padding: 25px;
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%;
+    border: 5px solid var(--pink-color);
+    padding: 8px;
+    margin: 20px 20px 20px 20px;
+}
+
+header h1 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    width: 600px;
+    margin: 50px 20px 20px 20px;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+header ul {
+    display: flex;
+    text-align: center;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+header span {
+    color: var(--pink-color);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--pink-color);
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+address {
+    font-style: normal;
+    color: var(--text-color);  
+}
+
+.contacts::before {
+    content: '';
+    display: flex;
+    width: 600px;
+    background-color: #979899;
+    height: 1px;
+    margin-left: 20px;
+    position: absolute;
+    top: 360px;
+}
+
+p {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+main h2, h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--title-color);
+}
+
+main h4 {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--title-color);
+}
+
+.about-me {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.about-me-title {
+    background-color: var(--dark-gray-color);
+    width: 70%;
+    padding: 20px 20px 40px 0px;
+    text-align: right;
+}
+
+.about-me-content {
+    background-color: var(--light-gray-color);
+    padding: 20px 20px 20px 20px;
+}
+
+.skills {
+    display: flex;
+}
+
+.skills-title {
+    background-color: var(--light-gray-color);
+    width: 70%;
+    padding: 20px 20px 40px 0px;
+    text-align: right;
+}
+
+.skills-content {
+    background-color: var(--dark-gray-color);
+    padding: 20px 20px 20px 20px;
+    width: auto;
+}
+
+.codewars {
+    display: flex;
+}
+
+.code-title {
+    background-color: var(--dark-gray-color);
+    width: 70%;
+    padding: 20px 20px 40px 0px;
+    text-align: right;
+}
+
+.code-content {
+  margin-right: 125px;
+}
+
+main ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+main li {
+    text-align: left;
+    padding: 0 15px 0 15px;
+}
+
+.education {
+    display: flex;
+}
+
+.education-title {
+    background-color: var(--light-gray-color);
+    width: 35%;
+    padding: 20px 20px 40px 0px;
+    text-align: right;
+}
+
+.education-content {
+    background-color: var(--dark-gray-color);
+    padding: 20px 20px 20px 20px;
+    width: 65%;
+   
+}
+
+.english {
+    display: flex;
+}
+
+.english-title {
+    background-color: var(--dark-gray-color);
+    width: 35%;
+    padding: 20px 20px 40px 0px;
+    text-align: right;
+}
+
+.english-content {
+    background-color: var(--light-gray-color);
+    padding: 20px 10px 20px 20px;
+    width: 65%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    padding: 15px 20px 15px 20px;
+    display: flex;
+}
+footer img {
+    padding-right: 10px;
+}
